@@ -1,0 +1,7 @@
+
+
+@mixin customMedia($width) {
+  @media (width <= $width) {
+    @content;
+  }
+}
