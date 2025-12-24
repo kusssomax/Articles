@@ -1,15 +1,11 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useArticle } from "@/features/articles/hooks/useArticle";
 import CircularProgress from "@mui/material/CircularProgress";
 import styles from "./ArticlePage.module.scss";
 import OneArticleCard from "@/features/articles/components/OneArticleCard/OneArticleCard";
-import Button from '@mui/material/Button';
-import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export const ArticlePage = () => {
     const { id } = useParams();
-    const navigate = useNavigate();
     const { article, isLoading, error } = useArticle(id)
 
     if (isLoading) {
