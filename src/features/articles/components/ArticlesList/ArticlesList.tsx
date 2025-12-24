@@ -20,10 +20,10 @@ const ArticlesList = () => {
     const displayArticles = searchQuery.trim() ? filteredArticles : articlesData;
 
 
-    if (isLoading && searchQuery.length > 0) {
+    if ((isLoading || searchQuery.length > 0) && !(filteredArticles.length > 0)) {
         return <div className={styles.loading}>
             <CircularProgress color="info" />
-        </div>;
+        </div>
     }
 
     if (error) {
