@@ -1,0 +1,29 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    gap: 1rem;
+}
+
+
+.articlePageContainer {
+    min-height: 100vh;
+
+    .imageWrapper {
+        width: 100%;
+        height: 245px;
+
+        .image {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
