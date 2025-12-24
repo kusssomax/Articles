@@ -1,0 +1,30 @@
+.header {
+  padding-inline: 4.75rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+
+  .searchWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2.5rem;
+
+    .searchTitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #363636;
+    }
+  }
+
+  .resultWrapper {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 0.25rem;
+    
+    .resultInfo {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #363636;
+    
+    }
+  }
+}
